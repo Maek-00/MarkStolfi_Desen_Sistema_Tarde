@@ -8,17 +8,21 @@
     <h1>Exemplo 02 Formulário</h1>
 <body>
     <form action="#">
-        <label>Usuário
-            <input name="nome" placeholder="Digite seu usuário..." type="text" required>
+        <label for="CEP">CEP
+            <input name="CEP" type="text" placeholder="12345-123" 
+            id="CEP" required pattern="\d{5}-?\d{3}"/>
         </label>
-    <br>
+        <br>
     <form action="#">
-        <label>Senha ||
-            <input name="senha" placeholder="Digite sua senha..." type="password" required>
+        <label for="Telefone">Telefone
+            <input name="telefone" type="tel" placeholder="12-12345-6789" 
+            id="telefone" required pattern="\d{2}-\d{5}-?\d{4}"> 
         </label>
-    <br>
-    <input type="submit" value="Enviar"/>
+        <input type="submit" value="Enviar"/>
     </form>
+
+        
+
     
 </body>
 </html>
