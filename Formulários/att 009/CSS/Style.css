@@ -1,12 +1,87 @@
 body{
+  background-color: #3f4cb3;
+
+}
+
+body .page{
     display: flex;
     align-items: center;
     margin: auto;
     padding: auto;
     flex-direction: column;
-    background-color: darkcyan;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+.page{
+    height: 950px;
+    width: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 20px 5px;
+    
+}
+.bemvindo h1{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.bemvindo{
+    background-color: #687aff;
+    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius:  0 0 20px 20px ;
+    position: absolute;
+    margin-top: -20px;
+}
+h2{
+    margin-top: 100px;
+    max-width: 70%;
 }
 
-table{
-    border-bottom: rgba(255,255,255,0.5);
-}
+
+fieldset{
+    border: 2px solid #0000;
+    border-radius: 12px;
+    background: linear-gradient(#ffffffcc, #ffffffcc ) padding-box, linear-gradient(
+          var(--angle),
+          #cdd3ff,
+          #687aff
+        ) border-box;
+    animation: 5s rotate linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  legend{
+    background: linear-gradient(
+          var(--angle),
+          #cbe5f7,
+          #687aff
+        ) border-box;
+    border-radius: 5px;
+    color: white;
+    backdrop-filter: blur(5px);
+  }
+
+  input, select{
+    border: 1px solid black;
+    border-radius: 5px ;
+    border-collapse: collapse;
+
+  }
+
+  fieldset, table{
+    overflow: hidden;
+  }
