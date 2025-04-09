@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    flex-direction: column;
+    background-color: darkcyan;
+}
+
+table{
+    border-bottom: rgba(255,255,255,0.5);
+}
