@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Exemplo For Each</title>
+    </head>
+    <body>
+        <?php
+            $musicas = array (
+                array ("Kid Abelha","Amanhã",1993),
+                array ("Ultraje A Rigor","Pelados",1985),
+                array ("Paralamas do Sucesso","Alagados",1987));
+                for ($linha=0;$linha<3;$linha++)
+                {
+                    for ($coluna=0;$coluna<3;$coluna++)
+                    {
+                        print $musicas[$linha][$coluna]."|";
+                    }
+                    echo "<br>";
+                }
+
+
+            echo "<br/>";
+            $AmazonProducts = array(
+                array("Código" => "Livro", "Descrição" => "Livros", "Preço" => 50),
+                array("Código" => "DVDs", "Descrição" => "Filmes", "Preço" => 50),
+                array("Código" => "CDs", "Descrição" => "Música", "Preço" => 50)
+            );
+            for ($linha = 0; $linha < 3; $linha++) { ?>
+            <p> | <?= $AmazonProducts[$linha]["Código"] ?>
+                | <?= $AmazonProducts[$linha]["Descrição"] ?>
+                | <?= $AmazonProducts[$linha]["Preço"] ?> 
+            </p>
+        <?php
+
+            }
+
+        ?>
+    
+
+    </body>
+</html> 
